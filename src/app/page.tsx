@@ -1,6 +1,7 @@
 "use client";
 
-import LoadingButton from "../loading-state/LoadingStateButton";
+import LoadingRefButton from "../loading-ref/LoadingRefButton";
+import LoadingStateButton from "../loading-state/LoadingStateButton";
 import { delay } from "../utils/delay";
 
 export default function Home() {
@@ -12,7 +13,8 @@ export default function Home() {
 
   return (
     <>
-      <LoadingButton onClick={handleClick} />
+      <LoadingStateButton onClick={handleClick} />
+      <LoadingRefButton onClick={handleClick} />
     </>
   );
 }
