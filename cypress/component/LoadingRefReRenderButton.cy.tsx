@@ -1,4 +1,4 @@
-import LoadingSyncStateButton from "../../src/loading-sync-state/LoadingSyncStateButton";
+import LoadingRefReRenderButton from "../../src/loading-ref-renderer/LoadingRefReRenderButton";
 import { delay } from "../../src/utils/delay";
 
 it(`button 을 2회 연속 클릭해도, handler는 1회 호출된다.`, () => {
@@ -9,7 +9,7 @@ it(`button 을 2회 연속 클릭해도, handler는 1회 호출된다.`, () => {
     await delay(1000);
   };
 
-  cy.mount(<LoadingSyncStateButton onClick={handleClick} />);
+  cy.mount(<LoadingRefReRenderButton onClick={handleClick} />);
   const button = cy.get("button");
   button.dblclick();
 
