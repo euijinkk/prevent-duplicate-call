@@ -1,4 +1,4 @@
-import LoadingButton from "../../src/loading-state/LoadingButton";
+import LoadingButton from "../../src/loading-state/LoadingStateButton";
 import { delay } from "../../src/utils/delay";
 
 it(`button 을 2회 클릭하면, handler도 2회 호출된다.`, () => {

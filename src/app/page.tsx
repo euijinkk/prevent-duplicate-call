@@ -1,6 +1,6 @@
 "use client";
 
-import LoadingButton from "../loading-state/LoadingButton";
+import LoadingButton from "../loading-state/LoadingStateButton";
 import { delay } from "../utils/delay";
 
 export default function Home() {

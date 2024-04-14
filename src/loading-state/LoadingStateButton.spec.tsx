@@ -1,6 +1,6 @@
 import { render, fireEvent, waitFor } from "@testing-library/react";
 import { delay } from "../utils/delay";
-import LoadingButton from "./LoadingButton";
+import LoadingButton from "./LoadingStateButton";
 import userEvent from "@testing-library/user-event";
 
 /**
