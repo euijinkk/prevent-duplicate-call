@@ -1,7 +1,18 @@
 "use client";
 
-import DebounceButton from "@/debounce/DebounceButton";
+import LoadingButton from "../loading-state/LoadingButton";
+import { delay } from "../utils/delay";
 
 export default function Home() {
-  return <></>;
+  const handleClick = async () => {
+    console.log("handleClick");
+    await delay(1000);
+    await delay(1000);
+  };
+
+  return (
+    <>
+      <LoadingButton onClick={handleClick} />
+    </>
+  );
 }
