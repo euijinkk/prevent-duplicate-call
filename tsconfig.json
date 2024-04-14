@@ -1,10 +1,6 @@
 {
   "compilerOptions": {
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -26,11 +22,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    "src/loading-sync-state"
   ],
-  "exclude": [
-    "node_modules",
-    "./cypress.config.ts",
-    "cypress/**/*"
-  ]
+  "exclude": ["node_modules", "./cypress.config.ts", "cypress/**/*"]
 }
