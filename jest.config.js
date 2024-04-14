@@ -2,7 +2,11 @@ module.exports = {
   preset: "ts-jest",
   testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
-  testPathIgnorePatterns: ["<rootDir>/.next/", "<rootDir>/node_modules/"],
+  testPathIgnorePatterns: [
+    "<rootDir>/.next/",
+    "<rootDir>/node_modules/",
+    "**/*cy.(ts|tsx|js|jsx)",
+  ],
   transform: {
     // Ensure that both TypeScript and JavaScript files are transformed
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
